@@ -10,7 +10,7 @@ function Chutar() {
   if (chute == numeroSecreto) {
     pontoJogador++;
     resultado.innerHTML =
-      "Parabéns! Patrick está orgulhoso, você acertou!" + " Maquina = " + "";
+      "Parabéns! Patrick está orgulhoso, você acertou!" + " Maquina = " + ""
     pontoMaquina + " X " + "Jogador=" + pontoJogador;
     document.getElementById("recomeçar").disabled = false;
     document.getElementById("chutar").disabled = true;
@@ -70,4 +70,5 @@ function Recomeçar() {
   tentativas = 3;
   resultado.innerHTML = "Próxima rodada, chute um número!";
   document.getElementById("recomeçar").disabled = true;
+  document.getElementById("valor").value = "";
 }
